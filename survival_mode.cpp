@@ -2,6 +2,7 @@
 
 class survival_modes : public CreatureScript
 {
+public:
 	survival_modes() : CreatureScript("survival_mode") {}
 
 	bool OnGossipHello(Player* player, Creature* creature)
@@ -14,6 +15,7 @@ class survival_modes : public CreatureScript
 
 	}
 };
+
 void AddSC_survival_mode()
 {
 	new survival_modes;
