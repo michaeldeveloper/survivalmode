@@ -30,6 +30,15 @@ public:
 
 	bool OnGossipSelect(Player* player, Creature* creature, uint32 sender, uint32 action)
 	{
+		switch(action)
+		{
+		case 0:
+			if(!player->isinCombat())
+			{
+				player->TeleportTo(533, 3715.92f, -5106.6f, 141.29f, 6.10f);
+			}
+			break;
+		}
 		return true;
 	}
 };
